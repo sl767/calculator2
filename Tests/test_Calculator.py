@@ -27,6 +27,14 @@ class MyTestCase(unittest.TestCase):
         self.calculator.sum(1, 2)
         self.assertEqual(3, self.calculator.Result)
 
+    def test_calculator_return_product(self):
+        result = self.calculator.multiplication(1, 2)
+        self.assertEqual(2, result)
+
+    def test_calculator_access_product_result(self):
+        self.calculator.multiplication(1, 2)
+        self.assertEqual(2, self.calculator.Result)
+
     def test_multiple_calculators(self):
         calculator1 = Calculator()
         calculator2 = Calculator()

@@ -2,6 +2,8 @@ import unittest
 
 from MathOperations.addition import Addition
 from MathOperations.subtraction import Subtraction
+from MathOperations.multiplication import Multiplication
+
 
 
 class MyTestCase(unittest.TestCase):
