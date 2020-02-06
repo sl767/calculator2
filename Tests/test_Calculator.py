@@ -55,9 +55,17 @@ class MyTestCase(unittest.TestCase):
         result = self.calculator.root(16, 2)
         self.assertEqual(4, result)
 
-    def test_calculator_return_root_result(self):
+    def test_calculator_return_access_result(self):
         self.calculator.root(16, 2)
         self.assertEqual(4, self.calculator.Result)
+
+    def test_calculator_return_log(self):
+        result = self.calculator.log(64, 2)
+        self.assertEqual(6, self.calculator.Result)
+
+    def test_calculator_access_result(self):
+        self.calculator.log(64, 2)
+        self.assertEqual(6, self.calculator.Result)
 
     def test_multiple_calculators(self):
         calculator1 = Calculator()
