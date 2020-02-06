@@ -5,6 +5,8 @@ from MathOperations.subtraction import Subtraction
 from MathOperations.multiplication import Multiplication
 from MathOperations.division import Division
 from MathOperations.exponentiation import Exponentiation
+from MathOperations.root import Root
+
 
 
 class MyTestCase(unittest.TestCase):
@@ -28,6 +30,8 @@ class MyTestCase(unittest.TestCase):
     def test_MathOperations_Exponentiation(self):
         self.assertEqual(4, Exponentiation.exponentiation(2, 2))
 
+    def test_MathOperations_Root(self):
+        self.assertEqual(4, Root.root(16, 2))
 
 if __name__ == '__main__':
     unittest.main()
