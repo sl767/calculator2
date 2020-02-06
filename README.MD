@@ -1,1 +1,1 @@
-# My Calculator Project
+#My Calculator Program
