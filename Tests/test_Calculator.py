@@ -43,6 +43,14 @@ class MyTestCase(unittest.TestCase):
         self.calculator.division(4, 2)
         self.assertEqual(2, self.calculator.Result)
 
+    def test_calculator_return_power(self):
+        result = self.calculator.exponentiation(2, 2)
+        self.assertEqual(4, result)
+
+    def test_calculator_access_power_result(self):
+        self.calculator.exponentiation(2, 2)
+        self.assertEqual(4, self.calculator.Result)
+
     def test_multiple_calculators(self):
         calculator1 = Calculator()
         calculator2 = Calculator()
