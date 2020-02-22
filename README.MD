@@ -85,3 +85,11 @@ Here is an example of polymorphic code from geeksforgeeks.org.
         country.capital() 
         country.language() 
         country.type() 
+
+References:
+
+https://www.geeksforgeeks.org/polymorphism-in-python/  
+http://greenteapress.com/thinkpython2/html/index.html                                 
+https://netjs.blogspot.com/
+https://www.python-course.eu/object_oriented_programming.php
+
